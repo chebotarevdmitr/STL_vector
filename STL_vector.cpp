@@ -11,8 +11,8 @@ int main() {
 	}
 
 	//способы распечатки при помощи итератора ;
-	for (auto it = numbers.begin(); it != numbers.end(); it++) {
-		*it = 20;
+	for (auto it = numbers.cbegin(); it != numbers.cend(); it++) {
+		*it = 20; // cообщение об ошибке (const не допустимо)
 		cout << *it << endl; 
 	}
 
