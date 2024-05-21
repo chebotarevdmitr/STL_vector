@@ -10,7 +10,7 @@ int main() {
 		numbers.push_back(i);
 	}
 
-	
+	cout << "Size: " << numbers.size() << endl; //текущий размер вектора
 
 
 	cin.get();
