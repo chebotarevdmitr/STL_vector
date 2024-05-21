@@ -10,8 +10,13 @@ int main() {
 		numbers.push_back(i);
 	}
 
-	for (int number : numbers) //перввый способ распечатки
-		cout << number << endl;
+	//способы распечатки при помощи итератора ;
+	for (auto it = numbers.begin(); it != numbers.end(); it++) {
+		cout << *it << endl; //значение элемента
+		cout << &it << endl; //адрес итератора
+		cout << &(*it) << endl;//aдрес элемента
+	}
+
 
 	cin.get();
 }
