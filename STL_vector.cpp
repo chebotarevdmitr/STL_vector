@@ -10,5 +10,8 @@ int main() {
 		numbers.push_back(i);
 	}
 
+	for (int number : numbers) //перввый способ распечатки
+		cout << number << endl;
+
 	cin.get();
 }
