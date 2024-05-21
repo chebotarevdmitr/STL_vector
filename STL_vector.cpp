@@ -11,7 +11,7 @@ int main() {
 	}
 
 	cout << "Size: " << numbers.size() << endl; //текущий размер вектора
-
+	cout << "Max size : " << numbers.max_size() << endl;//максимальный размер
 
 	cin.get();
 }
