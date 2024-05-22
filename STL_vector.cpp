@@ -10,12 +10,12 @@ int main() {
 		numbers.push_back(i);
 	}
 
-	//способы распечатки при помощи итератора ;
-	for (auto it = numbers.begin(); it != numbers.end(); it++) {
-		*it = 20; 
-		cout << *it << endl; 
-	}
+	numbers.insert(numbers.begin() + 5, 88);//вставка
+	numbers.erase(numbers.begin() + 5);     //удаление
 
+	for (auto n : numbers) {
+		cout << n << endl;
+	}
 
 	cin.get();
 }
