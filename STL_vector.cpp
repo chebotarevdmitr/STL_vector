@@ -10,8 +10,12 @@ int main() {
 		numbers.push_back(i);
 	}
 
-	cout << "Size: " << numbers.size() << endl; //текущий размер вектора
+	cout << "Size : " << numbers.size() << endl; //текущий размер вектора
 	cout << "Max size : " << numbers.max_size() << endl;//максимальный размер
+	cout << "Capacity : " << numbers.capacity() << endl;//вместимость
+	numbers.resize(5); //изменение размера вектора до 5
+	cout << "Size : " << numbers.size() << endl;//текущий размер вектора
+
 
 	cin.get();
 }
