@@ -15,7 +15,12 @@ int main() {
 	cout << "Capacity : " << numbers.capacity() << endl;//вместимость
 	numbers.resize(5); //изменение размера вектора до 5
 	cout << "Size : " << numbers.size() << endl;//текущий размер вектора
-
+	if (numbers.empty()) {
+		cout << "Vector is empty\n";
+	}
+	else {
+		cout << "Vector is not empty\n";
+	}
 
 	cin.get();
 }
