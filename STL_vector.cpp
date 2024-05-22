@@ -21,6 +21,12 @@ int main() {
 	else {
 		cout << "Vector is not empty\n";
 	}
+	cout << "Element [0] is " << numbers[0] << endl;//доступ к елементу[0]
+	cout << "Element at(0) is : " << numbers.at(0)<<endl;//доступ к елементу[0]через at(0)
+	cout << "Front : " << numbers.front() << endl;//фронтальный элумент
+	cout << "Beck :" << numbers.back() << endl;
+	numbers.clear(); //очистка
+	cout << "Size : " << numbers.size() << endl;//текущий размер вектора
 
 	cin.get();
 }
